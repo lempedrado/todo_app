@@ -4,7 +4,7 @@ class TodoController < ApplicationController
     end
     def show 
         @title="Workshop To-do List"
-        todo_id=params[:id]
+        todo_id=params[:id] 
         if todo_id=='1'
             @todo_description='Make the curriculum'
         elsif todo_id=='2'
