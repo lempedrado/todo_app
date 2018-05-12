@@ -26,6 +26,6 @@ class TodoController < ApplicationController
         elsif todo_id=='7'
             @todo_description='Have a great workshop'
             @todo_count='0'
-        end    
+        end 
     end
 end

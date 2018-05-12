@@ -1,14 +1,15 @@
-<%@priority = "low"%>
-
     <div>
       <input type="checkbox">
       <%
-      if @todo_count >= 4
-        @priority = "high"
-      elsif @todo_count == 2 || @todo_count == 3
+      @priority = "high"
+      if @todo_count == 2 || @todo_count == 3
         @priority = "medium"
+      elsif @todo_count == 1 || @todo_count == 0
+        @priority = "low"
       end
       %>
+      
+      
       <h2 class="<%= @priority%>"><%= params[:id]%>. <%= @todo_description %></h2>
       <span><%= @todo_count%> Pomodoros</span>
       <a href="#" id="edit-todo-button">Edit</a>

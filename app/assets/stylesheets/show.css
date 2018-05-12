@@ -97,10 +97,7 @@ a{
 }
 
 .high{
-  color: #C60D0D;
-  font-weight: bold;
-  font: Comic;
-  padding-bottom: 1px #000000;
+  color: #FF0000;
 }
 
 .medium{
@@ -108,5 +105,5 @@ a{
 }
 
 .low{
-  color: #5BEF0B;
+  color: #0BFF0B;
 }
