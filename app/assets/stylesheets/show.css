@@ -95,3 +95,18 @@ a{
 #delete-todo-button:active{
   box-shadow: 1px 1px 1px #90A4AE;
 }
+
+.high{
+  color: #C60D0D;
+  font-weight: bold;
+  font: Comic;
+  padding-bottom: 1px #000000;
+}
+
+.medium{
+  color: #FFEE00;
+}
+
+.low{
+  color: #5BEF0B;
+}
