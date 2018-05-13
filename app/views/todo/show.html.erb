@@ -12,8 +12,8 @@
       
       <h2 class="<%= @priority%>"><%= params[:id]%>. <%= @todo_description %></h2>
       <span><%= @todo_pomodoro_estimate%> Pomodoros</span>
-      <a href="#" id="edit-todo-button">Edit</a>
-      <a href="#" id="delete-todo-button">Delete</a>
+      <a href="/todo/edit/<%= @todo.id %>" id="edit-todo-button">Edit</a>
+      <a href="/todo/destroy/<%= @todo.id %>" class="button delete-todo-button">Delete</a>
       <a href="/todo/index.html" class="simple-link">Go back...</a>
     </div>
     
