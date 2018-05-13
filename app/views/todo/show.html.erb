@@ -2,16 +2,16 @@
       <input type="checkbox">
       <%
       @priority = "high"
-      if @todo_count == 2 || @todo_count == 3
+      if @todo_pomodoro_estimate == 2 || @todo_pomodoro_estimate == 3
         @priority = "medium"
-      elsif @todo_count == 1 || @todo_count == 0
+      elsif @todo_pomodoro_estimate == 1 || @todo_pomodoro_estimate == 0
         @priority = "low"
       end
       %>
       
       
       <h2 class="<%= @priority%>"><%= params[:id]%>. <%= @todo_description %></h2>
-      <span><%= @todo_count%> Pomodoros</span>
+      <span><%= @todo_pomodoro_estimate%> Pomodoros</span>
       <a href="#" id="edit-todo-button">Edit</a>
       <a href="#" id="delete-todo-button">Delete</a>
       <a href="/todo/index.html" class="simple-link">Go back...</a>
